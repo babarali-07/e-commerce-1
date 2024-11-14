@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="cards.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <select id="selectContainer" onchange="getValue(this)"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-300 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option value="all-categories" selected>All Categories</option>
+        </select>
+        <input type="text" onkeyup="searchOnText()" id="inputTxt" placeholder="Type to search..."
+            class="bg-gray-50  border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-300 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+            <input type="number" onkeyup="searchOnPrice()" id="PriceInp" placeholder="  Price..."
+            class="bg-gray-50  border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-300 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+    </div>
+    <div class="cardcontainer m-5">
+        <div id="cards">
+
+        </div>
+
+    <script src="/newCard.js"></script>
+</body>
+
+</html>
