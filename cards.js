@@ -11,6 +11,7 @@ async function getApidata() {
     // console.log(ApiData);
     // allApiData = dataInjson
     // console.log(Object.keys(dataInjson[0]));
+    console.log("new line of code")
    
 
 };
